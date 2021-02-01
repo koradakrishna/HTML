@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title></title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <h1> BIO-DATA </h1>
+
+    <form>
+<section align="lwft">
+      <fieldset>
+        <legend> Personal Details </legend>
+      <label for="fname">First Name</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last Name</label><br>
+      <input type="text" id="lname" name="lname"><br>
+      <br>
+      <label for="birthday"> Date Of Birth:</label>
+      <input type="date" id="birthday" name="birthday"><br>
+</fieldset>
+</section>
+    </form>
+
+    <p> Gender </p>
+    <form>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male"> Male </label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female"> Female </label> <br><br>
+
+      <label for="mobile">Mobile Number</label>
+      <input type="mob" id="mobile" name="mobile" placeholder="123-456789"
+      pattern="[0-9]{3}-[0-9]{6}"><br>
+      <small> Format :123-456789</small><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+
+    </form>
+
+
+    <form>
+      <fieldset>
+        <legend>Qualifications</legend>
+      <input type="checkbox" id="study" name="study" value="pg">
+      <label for="study"> Post Graduation </label> <br>
+      <input type="checkbox" id="study" name="study" value="degree">
+      <label for="study"> Graduation </label> <br>
+      <input type="checkbox" id="study" name="study" value="inter">
+      <label for="study">Intermediate</label> <br>
+      <input type="checkbox" id="study" name="study" value="ssc">
+      <label for="study"> SSC </label> <br>
+    </fieldset>
+
+
+    <fieldset>
+      <legend>City</legend>
+
+    <input list="cities" name="cities">
+      <datalist id="cities">
+        <option value="vijayawada">
+        <option value="Tirupathi">
+        <option value="Nellore">
+        <option value="Kurnool">
+
+      </datalist>
+      </fieldset>
+
+      <br>
+      <label for="role"> Job Role: </label><br>
+      <input type="text" id="role" name="role" value="php" disabled> <br><br>
+      <label for="experience"> Experience :</label>
+      <input type="number" id="experience" name="experience" min="0" max="5"><br><br>
+      <label for="myfile"> Upload Your Resume: </label>
+      <input type="file" id="mylife" name="mylife"><br><br>
+    <form target="iframe">
+      <button type="button" onclick="alert('Success')">Submit</button>
+      <input type="reset">
+</form>
+
+
+
+  </body>
+</html>

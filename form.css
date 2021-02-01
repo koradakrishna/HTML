@@ -1,0 +1,20 @@
+body {
+  background-image: url('background.jpg');
+}
+form {
+  align:"center";
+  width: 300px;
+margin: 0 auto;
+}
+p{
+  align:"center";
+  width: 300px;
+margin: 0 auto;
+}
+h1 {
+  align:"center";
+  width: 300px;
+margin: 0 auto;
+font-style: italic;
+color: red;
+}
