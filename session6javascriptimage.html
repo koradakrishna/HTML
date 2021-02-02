@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h1> JavaScript </h1>
+<P>JavaScript Changes The Value Of The Source Of The Image</p>
+
+  <script>
+    function light(sw) {
+      var pic;
+      if (sw==0) {
+        pic="bulboff.gif"
+      } else {
+        pic="bulbon.gif"
+      }
+      document.getElementById('myImage').src=pic;
+
+      }
+    </script>
+
+    <img src="bulboff.gif" alt="bulboff" id="myImage" width="100" height="180">
+
+    <p>
+      <button type="button" onclick="light(1)">Light On</button>
+      <button type="button" onclick="light(0)">Light Off</button>
+      </p>
+
+
+
+  </body>
+</html>
